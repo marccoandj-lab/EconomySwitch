@@ -83,7 +83,7 @@ export const DigitalAppCallout = () => {
                 <p className="text-slate-500 text-sm mb-4">Open camera & scan for instant access</p>
 
                 <a
-                  href="https://economy-switch-cjxd.vercel.app/"
+                  href="https://economy-switch.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block w-full py-2 px-4 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-slate-800 transition-colors mb-4"

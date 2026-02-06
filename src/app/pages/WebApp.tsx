@@ -5,7 +5,7 @@ import { Monitor, Globe, Users, Zap, Award, CheckCircle2, ArrowRight } from 'luc
 import qrCode from 'figma:asset/c0c50de14a46617bed364859804caf96a6b44e7f.png';
 
 export const WebApp = () => {
-  const appUrl = "https://economy-switch-cjxd.vercel.app/";
+  const appUrl = "https://economy-switch.vercel.app/";
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-200 selection:text-blue-900">
@@ -131,7 +131,7 @@ export const WebApp = () => {
                       rel="noopener noreferrer"
                       className="text-xs font-semibold text-white/80 hover:text-white underline transition-colors"
                     >
-                      economy-switch-cjxd.vercel.app
+                      economy-switch.vercel.app
                     </a>
                   </div>
                 </div>
