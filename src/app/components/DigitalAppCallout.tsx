@@ -80,9 +80,18 @@ export const DigitalAppCallout = () => {
 
               <div className="text-center">
                 <h3 className="text-xl font-bold text-slate-900 mb-1">Scan to Play</h3>
-                <p className="text-slate-500 text-sm">Open camera & scan for instant access</p>
+                <p className="text-slate-500 text-sm mb-4">Open camera & scan for instant access</p>
 
-                <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-center gap-2 text-xs font-medium text-slate-400">
+                <a
+                  href="https://economy-switch-cjxd.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block w-full py-2 px-4 bg-slate-900 text-white rounded-xl text-sm font-bold hover:bg-slate-800 transition-colors mb-4"
+                >
+                  Open in Browser
+                </a>
+
+                <div className="pt-4 border-t border-slate-100 flex items-center justify-center gap-2 text-xs font-medium text-slate-400">
                   <Check size={14} className="text-emerald-500" />
                   <span>No download required</span>
                 </div>
