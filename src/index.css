@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
-html,
-body {
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
