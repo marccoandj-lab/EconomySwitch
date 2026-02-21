@@ -120,7 +120,7 @@ export function Hero() {
                 initial={{ x: rowIdx === 1 ? "-50%" : "0%" }}
                 animate={{ x: rowIdx === 1 ? "0%" : "-50%" }}
                 transition={{
-                  duration: 40,
+                  duration: 25,
                   repeat: Infinity,
                   ease: "linear"
                 }}
