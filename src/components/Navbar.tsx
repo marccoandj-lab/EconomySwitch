@@ -53,7 +53,7 @@ export function Navbar() {
         : 'bg-transparent py-4'
         }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <motion.a
@@ -87,7 +87,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-colors z-50 relative"
+            className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-colors z-50 relative mr-4"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -117,7 +117,7 @@ export function Navbar() {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  className="block px-4 py-4 text-lg font-medium text-slate-300 hover:bg-slate-800/50 hover:text-emerald-400 rounded-xl transition-all"
+                  className="block px-8 py-4 text-lg font-medium text-slate-300 hover:bg-slate-800/50 hover:text-emerald-400 rounded-xl transition-all"
                   onClick={(e) => scrollToSection(e, link.href)}
                 >
                   {link.name}
