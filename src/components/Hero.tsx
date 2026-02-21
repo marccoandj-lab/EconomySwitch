@@ -1,13 +1,22 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
+import char1 from '../assets/1.png';
+import char2 from '../assets/2.png';
+import char3 from '../assets/3.png';
+import char4 from '../assets/4.png';
+import char5 from '../assets/5.png';
+import char6 from '../assets/6.png';
+import char7 from '../assets/7.png';
+import char8 from '../assets/8.png';
+import char9 from '../assets/9.png';
 
 const heroSteps = [
   {
     title: 'Dobrodošli u EconomySwitch',
     subtitle: 'Igra koja menja način razmišljanja',
     description: 'EconomySwitch je revolucionarna edukativna društvena igra koja kombinuje zabavu sa učenjem. Kroz dinamično iskustvo, igrači razvijaju finansijsku inteligenciju i svest o održivom razvoju.',
-    character: '/assets/9.png',
+    character: char9,
     characterName: 'Switch',
     color: 'from-cyan-500 to-blue-600',
   },
@@ -15,7 +24,7 @@ const heroSteps = [
     title: 'Upravljanje Novcem',
     subtitle: 'Osnove finansijske pismenosti',
     description: 'Naučite kako da balansirate prihode i troškove, pravite budžet i razumete vrednost novca. Svaka odluka ima posledice – baš kao u stvarnom životu!',
-    character: '/assets/1.png',
+    character: char1,
     characterName: 'Novak - Sportista',
     color: 'from-emerald-500 to-teal-600',
   },
@@ -23,7 +32,7 @@ const heroSteps = [
     title: 'Investicije i Rizik',
     subtitle: 'Pametno ulaganje',
     description: 'Upoznajte se sa svetom investicija! Od berze do nekretnina, naučite kako da procenite rizik i nagradu. Bacite kockicu i vidite da li će vaša investicija doneti profit.',
-    character: '/assets/2.png',
+    character: char2,
     characterName: 'Leonardo Da Switchy',
     color: 'from-amber-500 to-orange-600',
   },
@@ -31,7 +40,7 @@ const heroSteps = [
     title: 'Kvizovi i Znanje',
     subtitle: 'Proverite svoje znanje',
     description: 'Na poljima sa pitanjima odgovarate na kvizove iz finansijske pismenosti i održivog razvoja. Tačni odgovori donose bonus novac, a netačni – male kazne.',
-    character: '/assets/3.png',
+    character: char3,
     characterName: 'Switchola Jokić',
     color: 'from-pink-500 to-rose-600',
   },
@@ -39,15 +48,15 @@ const heroSteps = [
     title: 'Održivi Razvoj',
     subtitle: 'Zelena ekonomija budućnosti',
     description: 'EconomySwitch vas uči kako da donosite odluke koje su dobre i za vaš novčanik i za planetu. Zelene investicije, ekološki projekti i održive prakse su ključ uspeha.',
-    character: '/assets/4.png',
+    character: char4,
     characterName: 'Switchopatra',
     color: 'from-red-500 to-rose-600',
   },
   {
     title: 'Inovacije i Nauka',
     subtitle: 'Tehnologija menja svet',
-    description: 'Ulažite u inovativne tehnologije i naučna otkrića. Od solarnih panela do električnih vozila – budućnost pripada onima koji razumeju trendove.',
-    character: '/assets/5.png',
+    description: 'Ulažite in inovativne tehnologije i naučna otkrića. Od solarnih panela do električnih vozila – budućnost pripada onima koji razumeju trendove.',
+    character: char5,
     characterName: 'Wolfgang Switchodeus Mozart',
     color: 'from-blue-500 to-indigo-600',
   },
@@ -55,7 +64,7 @@ const heroSteps = [
     title: 'Poslovni Svet',
     subtitle: 'Preduzetništvo i liderstvo',
     description: 'Pokrenite svoj biznis, zapošljavajte radnike i širite carstvo. Dobri lideri donose pametne odluke i inspirišu druge da ih prate.',
-    character: '/assets/6.png',
+    character: char6,
     characterName: 'Switchbert Einstein',
     color: 'from-green-500 to-emerald-600',
   },
@@ -63,7 +72,7 @@ const heroSteps = [
     title: 'Kreativnost i Kultura',
     subtitle: 'Umetnost kao investicija',
     description: 'Kultura i umetnost su takođe vredne investicije. Sakupljajte umetnička dela, podržavajte kreativce i gradite kulturno bogatstvo.',
-    character: '/assets/7.png',
+    character: char7,
     characterName: 'Switchola Tesla',
     color: 'from-blue-600 to-cyan-600',
   },
@@ -71,7 +80,7 @@ const heroSteps = [
     title: 'Cilj: 1.000.000 €',
     subtitle: 'Postanite milioner!',
     description: 'Prvi igrač koji dostigne milion evra pobeđuje! Koristite sve strategije, iskoristite SWITCH mehaniku i donosite pametne odluke na putu do uspeha.',
-    character: '/assets/8.png',
+    character: char8,
     characterName: 'Frida - Umetnica',
     color: 'from-purple-500 to-pink-600',
   },

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -62,7 +63,7 @@ export function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <img src="/assets/logo.png" alt="EconomySwitch Logo" className="w-14 h-14 md:w-16 md:h-16 object-contain" />
+            <img src={logo} alt="EconomySwitch Logo" className="w-14 h-14 md:w-16 md:h-16 object-contain" />
             <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
               EconomySwitch
             </span>

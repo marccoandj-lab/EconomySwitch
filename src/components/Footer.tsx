@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, Instagram, Heart } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -26,7 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <img src="/assets/logo.png" alt="EconomySwitch Logo" className="w-16 h-16 object-contain" />
+              <img src={logo} alt="EconomySwitch Logo" className="w-16 h-16 object-contain" />
               <span className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">
                 EconomySwitch
               </span>
