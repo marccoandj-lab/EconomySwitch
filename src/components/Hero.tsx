@@ -15,7 +15,7 @@ const heroSteps = [
   {
     title: 'Dobrodošli u EconomySwitch',
     subtitle: 'Igra koja menja način razmišljanja',
-    description: 'EconomySwitch je revolucionarna edukativna društvena igra koja kombinuje zabavu sa učenjem. Kroz dinamično iskustvo, igrači razvijaju finansijsku inteligenciju i svest o održivom razvoju.',
+    description: 'EconomySwitch je inovativna, edukativna društvena igra koja kombinuje zabavu sa učenjem. Kroz dinamično iskustvo, igrači razvijaju finansijsku pismenost i svest o održivom razvoju.',
     character: char9,
     characterName: 'Switch',
     color: 'from-cyan-500 to-blue-600',
@@ -31,7 +31,7 @@ const heroSteps = [
   {
     title: 'Investicije i Rizik',
     subtitle: 'Pametno ulaganje',
-    description: 'Upoznajte se sa svetom investicija! Od berze do nekretnina, naučite kako da procenite rizik i nagradu. Bacite kockicu i vidite da li će vaša investicija doneti profit.',
+    description: 'Upoznajte se sa svetom investicija! Ulozite novac, zatim bacite kockicu i vidite da li ce vasa investicija doneti profit.',
     character: char2,
     characterName: 'Leonardo Da Switchy',
     color: 'from-amber-500 to-orange-600',
@@ -39,7 +39,7 @@ const heroSteps = [
   {
     title: 'Kvizovi i Znanje',
     subtitle: 'Proverite svoje znanje',
-    description: 'Na poljima sa pitanjima odgovarate na kvizove iz finansijske pismenosti i održivog razvoja. Tačni odgovori donose bonus novac, a netačni – male kazne.',
+    description: 'Na poljima sa pitanjima odgovarate na pitanja iz finansijske pismenosti, održivog razvoja i cirkularne ekonomije. Tačni odgovori donose bonus novac, a netačni – male kazne.',
     character: char3,
     characterName: 'Switchola Jokić',
     color: 'from-pink-500 to-rose-600',
@@ -47,7 +47,7 @@ const heroSteps = [
   {
     title: 'Održivi Razvoj',
     subtitle: 'Zelena ekonomija budućnosti',
-    description: 'EconomySwitch vas uči kako da donosite odluke koje su dobre i za vaš novčanik i za planetu. Zelene investicije, ekološki projekti i održive prakse su ključ uspeha.',
+    description: 'EconomySwitch vas uči kako da donosite odluke koje su dobre i za vaš novčanik i za planetu.',
     character: char4,
     characterName: 'Switchopatra',
     color: 'from-red-500 to-rose-600',
