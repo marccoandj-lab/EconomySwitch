@@ -9,7 +9,7 @@ const navLinks = [
   { name: 'Pravila', href: '#rules' },
   { name: 'Polja & Mehanike', href: '#fields' },
   { name: 'WebApp', href: '#webapp' },
-  { name: 'O nama', href: '#about-us' },
+  { name: 'O Nama', href: '#about-us' },
   { name: 'Kontakt', href: '#contact' },
 ];
 
