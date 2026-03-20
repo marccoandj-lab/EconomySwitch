@@ -138,7 +138,7 @@ export function About() {
                   <div className="text-slate-400 mb-6">Cilj igre – prvi do milion!</div>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="p-4 bg-slate-700/50 rounded-xl">
-                      <div className="text-emerald-400 font-bold text-xl">2-6</div>
+                      <div className="text-emerald-400 font-bold text-xl">2-8</div>
                       <div className="text-slate-400">Igrača</div>
                     </div>
                     <div className="p-4 bg-slate-700/50 rounded-xl">
