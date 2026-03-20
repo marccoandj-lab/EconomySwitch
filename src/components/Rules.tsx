@@ -7,42 +7,42 @@ const rules = [
     name: 'Start',
     color: 'from-green-500 to-emerald-600',
     description: 'Početno polje. Svaki igrač počinje ovde sa početnim kapitalom.',
-    example: 'Svaki igrač dobija 100.000 € na početku igre.',
+    example: 'Svaki igrač dobija 100.000  na početku igre.',
   },
   {
     icon: Coins,
     name: 'Prihod',
     color: 'from-yellow-500 to-amber-600',
     description: 'Kada stanete na ovo polje, dobijate novac.',
-    example: 'Plata: +50.000 € | Bonus: +20.000 €',
+    example: 'Plata: +50.000  | Bonus: +20.000 ',
   },
   {
     icon: XCircle,
     name: 'Trošak',
     color: 'from-red-500 to-rose-600',
     description: 'Neplanirani troškovi – gubite novac.',
-    example: 'Popravka automobila: -15.000 € | Računi: -10.000 €',
+    example: 'Popravka automobila: -15.000  | Računi: -10.000 ',
   },
   {
     icon: HelpCircle,
     name: 'Pitanje (Kviz)',
     color: 'from-purple-500 to-violet-600',
     description: 'Odgovarate na pitanje sa ponuđenim odgovorima (a, b, c, d).',
-    example: 'Tačan odgovor: +25.000 € | Netačan: -10.000 €',
+    example: 'Tačan odgovor: +20.000  | Netačan: -10.000 ',
   },
   {
     icon: List,
-    name: 'Nabrajanje',
+    name: 'Nabrajanje(Samo na fizickoj igri)',
     color: 'from-blue-500 to-indigo-600',
     description: 'Nabrojite što više pojmova iz određene oblasti u roku od 30 sekundi.',
-    example: 'Nabroj 5 banaka: Tačan odgovor = +30.000 €',
+    example: 'Nabroj 5 banaka: Tačan odgovor = +30.000 ',
   },
   {
     icon: TrendingUp,
     name: 'Investicija',
     color: 'from-emerald-500 to-teal-600',
     description: 'Ulažete novac. Bacate kockicu za ishod investicije.',
-    example: 'Ulog: 50.000 € | Kockica 1-3: Gubitak | 4-6: Dobitak (2x ulog)',
+    example: 'Ulog: 50.000  | Kockica 1-3: Gubitak | 4-6: Dobitak (2x ulog)',
   },
   {
     icon: Gavel,
@@ -56,7 +56,7 @@ const rules = [
     name: 'Tax (Porez)',
     color: 'from-slate-500 to-gray-600',
     description: 'Plaćate porez ili prikupljate porez od drugih igrača.',
-    example: 'Porez na imovinu: -20.000 € | Prikupljeni porez: +40.000 €',
+    example: 'Porez na imovinu: -20.000  | Prikupljeni porez: +40.000 ',
   },
   {
     icon: Repeat,
@@ -70,7 +70,7 @@ const rules = [
     name: 'Zatvor',
     color: 'from-slate-600 to-slate-700',
     description: 'Preskačete 1-3 kruga ili plaćate kauciju.',
-    example: 'Kaucija: -30.000 € ili čekajte 2 kruga.',
+    example: 'Kaucija: -30.000  ili čekajte 2 kruga.',
   },
 ];
 
@@ -174,7 +174,7 @@ export function Rules() {
             </div>
             <div className="text-center">
               <div className="text-6xl lg:text-7xl font-bold text-white mb-2">
-                1.000.000 €
+                1.000.000
               </div>
               <div className="text-xl text-emerald-200">Pobednički iznos</div>
             </div>

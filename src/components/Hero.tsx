@@ -25,7 +25,7 @@ const heroSteps = [
     subtitle: 'Osnove finansijske pismenosti',
     description: 'Naučite kako da balansirate prihode i troškove, pravite budžet i razumete vrednost novca. Svaka odluka ima posledice – baš kao u stvarnom životu!',
     character: char1,
-    characterName: 'Novak - Sportista',
+    characterName: 'Novak Switchovic',
     color: 'from-emerald-500 to-teal-600',
   },
   {
@@ -81,7 +81,7 @@ const heroSteps = [
     subtitle: 'Postanite milioner!',
     description: 'Prvi igrač koji dostigne milion evra pobeđuje! Koristite sve strategije, iskoristite SWITCH mehaniku i donosite pametne odluke na putu do uspeha.',
     character: char8,
-    characterName: 'Frida - Umetnica',
+    characterName: 'Frida Switchlo',
     color: 'from-purple-500 to-pink-600',
   },
 ];
@@ -208,9 +208,9 @@ export function Hero() {
                 className="grid grid-cols-3 gap-6 pt-4 lg:pt-8"
               >
                 {[
-                  { value: '2-6', label: 'Igrača' },
+                  { value: '2-8', label: 'Igrača' },
                   { value: '60+', label: 'Minuta' },
-                  { value: '10+', label: 'Godina' },
+                  { value: '15+', label: 'Godina' },
                 ].map((stat, index) => (
                   <div key={index} className="text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>

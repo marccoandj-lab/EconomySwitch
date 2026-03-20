@@ -106,7 +106,7 @@ export function About() {
               </h3>
               <div className="space-y-4">
                 {[
-                  { title: 'Deca (10+)', desc: 'Osnove finansijske pismenosti kroz zabavu' },
+                  { title: 'Srednjoskolci (15+)', desc: 'Osnove finansijske pismenosti kroz zabavu' },
                   { title: 'Mladi i studenti', desc: 'Priprema za samostalan život i upravljanje novcem' },
                   { title: 'Porodice', desc: 'Zajedničko učenje i kvalitetno provedeno vreme' },
                   { title: 'Škole i edukatori', desc: 'Interaktivno nastavno sredstvo za radionice' },
@@ -133,7 +133,7 @@ export function About() {
               <div className="relative bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700">
                 <div className="text-center">
                   <div className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent mb-2">
-                    1.000.000 €
+                    1.000.000
                   </div>
                   <div className="text-slate-400 mb-6">Cilj igre – prvi do milion!</div>
                   <div className="grid grid-cols-2 gap-4 text-sm">
