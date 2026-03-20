@@ -31,7 +31,7 @@ const heroSteps = [
   {
     title: 'Investicije i Rizik',
     subtitle: 'Pametno ulaganje',
-    description: 'Upoznajte se sa svetom investicija! Ulozite novac, zatim bacite kockicu i vidite da li ce vasa investicija doneti profit.',
+    description: 'Upoznajte se sa svetom investicija! Uložite novac, zatim bacite kockicu i vidite da li će vaša investicija doneti profit.',
     character: char2,
     characterName: 'Leonardo Da Switchy',
     color: 'from-amber-500 to-orange-600',
