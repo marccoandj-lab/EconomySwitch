@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Shield, HelpCircle, List, FileText } from 'lucide-react';
+import plavaStrana from '../assets/PlavaStrana.png';
+import zelenaStrana from '../assets/ZelenaStrana.png';
 
 const specialCards = [
   {
@@ -62,34 +64,28 @@ export function Fields() {
             transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
           >
             {/* Front Face */}
-            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center text-white font-bold bg-[#8dd5ff]/80 backdrop-blur-md shadow-lg" style={{ transform: 'rotateY(0deg) translateZ(160px)' }}>
-              <span className="text-3xl mb-2">🎲</span>
-              <span className="text-xl">Tabla 1</span>
+            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center bg-slate-800 overflow-hidden shadow-lg" style={{ transform: 'rotateY(0deg) translateZ(160px)' }}>
+              <img src={zelenaStrana} alt="Zelena Strana" className="w-full h-full object-cover" />
             </div>
             {/* Back Face */}
-            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center text-white font-bold bg-[#66b3e0]/80 backdrop-blur-md shadow-lg" style={{ transform: 'rotateY(180deg) translateZ(160px)' }}>
-              <span className="text-3xl mb-2">🎲</span>
-              <span className="text-xl">Tabla 2</span>
+            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center bg-slate-800 overflow-hidden shadow-lg" style={{ transform: 'rotateY(180deg) translateZ(160px)' }}>
+              <img src={plavaStrana} alt="Plava Strana" className="w-full h-full object-cover" />
             </div>
             {/* Right Face */}
-            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center text-slate-800 font-bold bg-[#b8eeb7]/80 backdrop-blur-md shadow-lg" style={{ transform: 'rotateY(90deg) translateZ(160px)' }}>
-              <span className="text-3xl mb-2">🎲</span>
-              <span className="text-xl">Tabla 3</span>
+            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center bg-slate-800 overflow-hidden shadow-lg" style={{ transform: 'rotateY(90deg) translateZ(160px)' }}>
+              <img src={zelenaStrana} alt="Zelena Strana" className="w-full h-full object-cover" />
             </div>
             {/* Left Face */}
-            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center text-white font-bold bg-[#8dc3a9]/80 backdrop-blur-md shadow-lg" style={{ transform: 'rotateY(-90deg) translateZ(160px)' }}>
-              <span className="text-3xl mb-2">🎲</span>
-              <span className="text-xl">Tabla 4</span>
+            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center bg-slate-800 overflow-hidden shadow-lg" style={{ transform: 'rotateY(-90deg) translateZ(160px)' }}>
+              <img src={plavaStrana} alt="Plava Strana" className="w-full h-full object-cover" />
             </div>
             {/* Top Face */}
-            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center text-white font-bold bg-[#8dd5ff]/80 backdrop-blur-md shadow-lg" style={{ transform: 'rotateX(90deg) translateZ(160px)' }}>
-              <span className="text-3xl mb-2">🎲</span>
-              <span className="text-xl">Tabla 5</span>
+            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center bg-slate-800 overflow-hidden shadow-lg" style={{ transform: 'rotateX(90deg) translateZ(160px)' }}>
+              <img src={zelenaStrana} alt="Zelena Strana" className="w-full h-full object-cover" />
             </div>
             {/* Bottom Face */}
-            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center text-slate-800 font-bold bg-[#b8eeb7]/80 backdrop-blur-md shadow-lg" style={{ transform: 'rotateX(-90deg) translateZ(160px)' }}>
-              <span className="text-3xl mb-2">🎲</span>
-              <span className="text-xl">Tabla 6</span>
+            <div className="absolute w-full h-full border-2 border-white/50 rounded-3xl flex flex-col items-center justify-center bg-slate-800 overflow-hidden shadow-lg" style={{ transform: 'rotateX(-90deg) translateZ(160px)' }}>
+              <img src={plavaStrana} alt="Plava Strana" className="w-full h-full object-cover" />
             </div>
           </motion.div>
           {/* Responsive adjustment for mobile (translateZ differs for w-64 vs w-80). 
