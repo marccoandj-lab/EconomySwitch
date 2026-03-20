@@ -9,6 +9,7 @@ const navLinks = [
   { name: 'Pravila', href: '#rules' },
   { name: 'Polja & Mehanike', href: '#fields' },
   { name: 'WebApp', href: '#webapp' },
+  { name: 'O nama', href: '#about-us' },
   { name: 'Kontakt', href: '#contact' },
 ];
 
@@ -26,6 +27,32 @@ export function Navbar() {
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    if (href === '#about-us') {
+      window.location.hash = href;
+      setIsMobileMenuOpen(false);
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    if (window.location.hash === '#about-us') {
+      window.location.hash = href;
+      setIsMobileMenuOpen(false);
+      // Wait for React to render the main page
+      setTimeout(() => {
+        const targetId = href.replace('#', '');
+        const elem = document.getElementById(targetId);
+        if (elem) {
+          const offset = 80;
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = elem.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - offset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
+      return;
+    }
+
     const targetId = href.replace('#', '');
     const elem = document.getElementById(targetId);
     if (elem) {
