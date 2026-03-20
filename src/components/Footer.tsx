@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Instagram, Heart } from 'lucide-react';
+import { Mail, Instagram, Heart, Facebook } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -11,6 +11,7 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 const socialLinks = [
   { icon: Instagram, href: 'https://www.instagram.com/economyswitchcompany/', label: 'Instagram' },
   { icon: TikTokIcon, href: 'https://www.tiktok.com/@economyswitchcompany', label: 'TikTok' },
+  { icon: Facebook, href: 'https://www.facebook.com/share/1CXDcA7xqZ/', label: 'Facebook' },
 ];
 
 export function Footer() {
@@ -73,6 +74,7 @@ export function Footer() {
                 { name: 'Pravila', href: '#rules' },
                 { name: 'Polja & Mehanike', href: '#fields' },
                 { name: 'WebApp', href: '#webapp' },
+                { name: 'O nama', href: '#about-us' },
               ].map((link, index) => (
                 <li key={index}>
                   <a
