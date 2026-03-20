@@ -86,10 +86,10 @@ export function WebApp() {
                       <div
                         key={i}
                         className={`flex-shrink-0 w-20 h-20 rounded-xl flex items-center justify-center text-3xl shadow-lg ${(i % 10) % 3 === 0
-                            ? 'bg-gradient-to-br from-emerald-500 to-teal-600'
-                            : (i % 10) % 3 === 1
-                              ? 'bg-gradient-to-br from-blue-500 to-indigo-600'
-                              : 'bg-gradient-to-br from-purple-500 to-pink-600'
+                          ? 'bg-gradient-to-br from-emerald-500 to-teal-600'
+                          : (i % 10) % 3 === 1
+                            ? 'bg-gradient-to-br from-blue-500 to-indigo-600'
+                            : 'bg-gradient-to-br from-purple-500 to-pink-600'
                           }`}
                       >
                         {['💰', '🎲', '❓', '📈', '🔄', '🏦', '🎯', '⚡', '🌱', '🏆'][i % 10]}
@@ -101,9 +101,9 @@ export function WebApp() {
                 {/* Player Info */}
                 <div className="mt-6 grid grid-cols-3 gap-4">
                   {[
-                    { name: 'Igrač 1', money: '450.000 €', color: 'from-emerald-500 to-teal-600' },
-                    { name: 'Igrač 2', money: '320.000 €', color: 'from-blue-500 to-indigo-600' },
-                    { name: 'Igrač 3', money: '280.000 €', color: 'from-purple-500 to-pink-600' },
+                    { name: 'Igrač 1', money: '450.000', color: 'from-emerald-500 to-teal-600' },
+                    { name: 'Igrač 2', money: '320.000', color: 'from-blue-500 to-indigo-600' },
+                    { name: 'Igrač 3', money: '280.000', color: 'from-purple-500 to-pink-600' },
                   ].map((player, index) => (
                     <div
                       key={index}

@@ -77,7 +77,7 @@ const heroSteps = [
     color: 'from-blue-600 to-cyan-600',
   },
   {
-    title: 'Cilj: 1.000.000 €',
+    title: 'Cilj: 1.000.000',
     subtitle: 'Postanite milioner!',
     description: 'Prvi igrač koji dostigne milion evra pobeđuje! Koristite sve strategije, iskoristite SWITCH mehaniku i donosite pametne odluke na putu do uspeha.',
     character: char8,

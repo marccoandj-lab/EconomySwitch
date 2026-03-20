@@ -153,7 +153,7 @@ export function Rules() {
                 <h3 className="text-2xl lg:text-3xl font-bold">Cilj Igre</h3>
               </div>
               <p className="text-lg text-emerald-100 leading-relaxed mb-6">
-                Prvi igrač koji dostigne <strong className="text-white font-bold">1.000.000 €</strong> pobeđuje u igri!
+                Prvi igrač koji dostigne <strong className="text-white font-bold">1.000.000</strong> pobeđuje u igri!
                 Pažljivo upravljajte svojim finansijama, donosite pametne investicione odluke
                 i iskoristite SWITCH mehaniku u svoju korist.
               </p>
