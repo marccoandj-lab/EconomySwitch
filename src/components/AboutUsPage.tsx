@@ -79,8 +79,8 @@ export function AboutUsPage() {
                transition={{ delay: index * 0.1 }}
                className="bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-[2rem] overflow-hidden hover:border-emerald-500/40 hover:bg-slate-800/60 transition-all duration-300 p-8 flex flex-col items-center text-center group hover:-translate-y-2 shadow-lg"
              >
-                {/* Individual Image Placeholder */}
-                <div className="w-36 h-36 md:w-40 md:h-40 bg-slate-900 rounded-full mb-6 border-4 border-slate-800 group-hover:border-emerald-500/50 transition-colors flex items-center justify-center overflow-hidden shadow-inner relative">
+                {/* Individual Image */}
+                <div className="w-40 h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 bg-slate-900 rounded-full mb-6 border-4 border-slate-800 group-hover:border-emerald-500/50 transition-colors flex items-center justify-center overflow-hidden shadow-inner relative flex-shrink-0">
                    <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
                    {member.image ? (
                      <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
