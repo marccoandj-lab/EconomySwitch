@@ -1,11 +1,17 @@
 import { motion } from 'framer-motion';
 
 export function AboutUsPage() {
-  const teamMembers = Array.from({ length: 9 }).map((_, index) => ({
-    id: index,
-    name: 'Ime i Prezime',
-    role: 'Uloga u timu'
-  }));
+  const teamMembers = [
+    { id: 1, name: 'Đorđe Janković', role: 'CEO', image: '/Djole.jpg' },
+    { id: 2, name: 'Tamara Rajić', role: 'CFO', image: '/Tamara.jpg' },
+    { id: 3, name: 'Dunja Antić', role: 'Project Manager', image: '/Dunja.jpg' },
+    { id: 4, name: 'Vladimir Gašić', role: 'HR', image: '/Gasic.jpg' },
+    { id: 5, name: 'Marija Urošević', role: 'Mentor', image: null },
+    { id: 6, name: 'Dušan Jovanović', role: 'CFO', image: '/Dusan.jpg' },
+    { id: 7, name: 'Jana Pavlović', role: 'Project Manager', image: '/Jana.jpg' },
+    { id: 8, name: 'Maša Vukojević', role: 'Marketing Manager', image: '/Masa.jpg' },
+    { id: 9, name: 'Marko Anđelković', role: 'Developer', image: '/Marko.jpg' }
+  ];
 
   return (
     <div className="pt-32 pb-24 min-h-screen">
@@ -34,15 +40,14 @@ export function AboutUsPage() {
            transition={{ delay: 0.1 }}
            className="mb-24"
         >
-          <div className="aspect-video w-full max-w-4xl mx-auto bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-[0_0_50px_rgba(16,185,129,0.1)] relative group cursor-pointer transition-all hover:border-emerald-500/30">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div className="w-20 h-20 rounded-full bg-emerald-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-               <svg className="w-10 h-10 text-emerald-400 translate-x-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-               </svg>
-            </div>
-            <span className="text-slate-300 text-xl font-medium mb-2 relative z-10">Video Placeholder</span>
-            <span className="text-slate-500 text-sm relative z-10">Ovde ubacite vaš prezentacioni video</span>
+          <div className="aspect-video w-full max-w-4xl mx-auto bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-[0_0_50px_rgba(16,185,129,0.1)] relative">
+            <video 
+              controls 
+              className="w-full h-full object-cover rounded-[2rem]"
+              src="/copy_CF1D07D5-41C3-4D20-A998-56B6177A012E.MP4"
+            >
+              Vaš pretraživač ne podržava video tag.
+            </video>
           </div>
         </motion.div>
 
@@ -59,8 +64,7 @@ export function AboutUsPage() {
              <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-blue-500 mx-auto rounded-full" />
           </div>
           <div className="w-full aspect-[16/9] md:aspect-[21/9] bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-2xl transition-all hover:border-blue-500/30">
-              <span className="text-slate-300 text-xl font-medium mb-2">Timska Slika Placeholder</span>
-              <span className="text-slate-500 text-sm">Ovde ubacite veliku sliku celog tima</span>
+              <img src="/Tim.jpg" alt="EconomySwitch Timska Slika" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 
@@ -77,8 +81,12 @@ export function AboutUsPage() {
              >
                 {/* Individual Image Placeholder */}
                 <div className="w-36 h-36 md:w-40 md:h-40 bg-slate-900 rounded-full mb-6 border-4 border-slate-800 group-hover:border-emerald-500/50 transition-colors flex items-center justify-center overflow-hidden shadow-inner relative">
-                   <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                   <span className="text-slate-500 text-sm font-medium relative z-10">Slika {index + 1}</span>
+                   <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+                   {member.image ? (
+                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                   ) : (
+                     <span className="text-slate-500 text-sm font-medium relative z-10">Mentor</span>
+                   )}
                 </div>
                 
                 {/* Name */}
