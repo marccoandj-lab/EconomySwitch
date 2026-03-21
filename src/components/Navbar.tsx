@@ -86,18 +86,18 @@ export function Navbar() {
           <motion.a
             href="#home"
             onClick={(e) => scrollToSection(e, '#home')}
-            className="flex items-center space-x-2 z-50"
+            className="flex items-center space-x-2 z-50 shrink-0 min-w-0"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <img src={logo} alt="EconomySwitch Logo" className="w-14 h-14 md:w-16 md:h-16 object-contain" />
-            <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+            <img src={logo} alt="EconomySwitch Logo" className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain shrink-0" />
+            <span className="text-lg sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent truncate pr-2">
               EconomySwitch
             </span>
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1 shrink-0">
             {navLinks.map((link) => (
               <motion.a
                 key={link.name}
@@ -114,7 +114,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-colors z-50 relative mr-16"
+            className="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-colors z-50 relative shrink-0"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
