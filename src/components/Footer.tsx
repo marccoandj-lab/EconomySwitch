@@ -15,6 +15,48 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    if (href === '#about-us') {
+      window.location.hash = href;
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    if (window.location.hash === '#about-us') {
+      window.location.hash = href;
+      // Wait for React to render the main page
+      setTimeout(() => {
+        const targetId = href.replace('#', '');
+        const elem = document.getElementById(targetId);
+        if (elem) {
+          const offset = 80;
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = elem.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - offset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
+      return;
+    }
+
+    const targetId = href.replace('#', '');
+    const elem = document.getElementById(targetId);
+    if (elem) {
+      const offset = 80; // Navbar height
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = elem.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <footer id="contact" className="bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -79,6 +121,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
+                    onClick={(e) => scrollToSection(e, link.href)}
                     className="text-slate-400 hover:text-emerald-400 transition-colors text-sm"
                   >
                     {link.name}
