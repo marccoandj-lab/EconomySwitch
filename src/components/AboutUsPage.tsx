@@ -6,7 +6,7 @@ export function AboutUsPage() {
     { id: 2, name: 'Tamara Rajić', role: 'CFO', image: '/Tamara.jpg' },
     { id: 3, name: 'Dunja Antić', role: 'Project Manager', image: '/Dunja.jpg' },
     { id: 4, name: 'Vladimir Gašić', role: 'HR', image: '/Gasic.jpg' },
-    { id: 5, name: 'Marija Urošević', role: 'Mentor', image: null },
+    { id: 5, name: 'Marija Urošević', role: 'Mentor', image: '/Marija.png' },
     { id: 6, name: 'Dušan Jovanović', role: 'CFO', image: '/Dusan.jpg' },
     { id: 7, name: 'Jana Pavlović', role: 'Project Manager', image: '/Jana.jpg' },
     { id: 8, name: 'Maša Vukojević', role: 'Marketing Manager', image: '/Masa.jpg' },
