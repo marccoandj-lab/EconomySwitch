@@ -139,9 +139,9 @@ export function Fields() {
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative grid lg:grid-cols-2 gap-12 items-center z-10">
-            <div>
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-white/10 flex items-center justify-center p-0.5 shadow-lg">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-white/10 flex items-center justify-center p-0.5 shadow-lg shrink-0">
                   <div className="w-full h-full rounded-xl bg-slate-900/50 flex items-center justify-center backdrop-blur-sm">
                     <span className="text-3xl text-purple-400">🔄</span>
                   </div>
@@ -158,15 +158,15 @@ export function Fields() {
                 Ova mehanika uči igrače da razmišljaju iz više perspektiva.
               </p>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-slate-900/50 backdrop-blur-md border border-white/5 rounded-2xl p-5 hover:bg-slate-800/50 transition-colors">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                <div className="bg-slate-900/50 backdrop-blur-md border border-white/5 rounded-2xl p-5 hover:bg-slate-800/50 transition-colors flex flex-col items-center lg:items-start">
                   <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center mb-3">
                     <div className="text-2xl">💰</div>
                   </div>
                   <div className="font-semibold text-white mb-1">Finansije</div>
                   <div className="text-sm text-slate-400">Prihodi, troškovi, investicije</div>
                 </div>
-                <div className="bg-slate-900/50 backdrop-blur-md border border-white/5 rounded-2xl p-5 hover:bg-slate-800/50 transition-colors">
+                <div className="bg-slate-900/50 backdrop-blur-md border border-white/5 rounded-2xl p-5 hover:bg-slate-800/50 transition-colors flex flex-col items-center lg:items-start">
                   <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-3">
                     <div className="text-2xl">🌱</div>
                   </div>
@@ -176,16 +176,16 @@ export function Fields() {
               </div>
             </div>
 
-            <div className="relative perspective-1000">
+            <div className="relative perspective-1000 mt-8 lg:mt-0">
               <motion.div
                 className="relative bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-1 border border-slate-700 shadow-2xl"
                 whileHover={{ rotateY: 5, rotateX: -5 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-blue-500/10 rounded-3xl" />
-                <div className="relative bg-slate-900/80 backdrop-blur-xl rounded-[23px] p-8">
+                <div className="relative bg-slate-900/80 backdrop-blur-xl rounded-[23px] p-6 sm:p-8">
                   <div className="text-center space-y-8">
-                    <div className="flex items-center justify-center space-x-6">
+                    <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6">
                       <div className="text-center group">
                         <div className="w-20 h-20 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-slate-700 transition-all shadow-lg mx-auto">
                           <span className="text-4xl filter drop-shadow-md">💰</span>
