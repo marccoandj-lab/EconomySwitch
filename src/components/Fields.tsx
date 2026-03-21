@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Shield, HelpCircle, List, FileText } from 'lucide-react';
+import { HelpCircle, List } from 'lucide-react';
 import plavaStrana from '../assets/PlavaStrana.png';
 import zelenaStrana from '../assets/ZelenaStrana.png';
 
@@ -15,18 +15,6 @@ const specialCards = [
     name: 'Nabrajanje',
     effect: 'Igrač nabraja pojmove iz određenih oblasti',
     color: 'from-emerald-500 to-teal-600',
-  },
-  {
-    icon: FileText,
-    name: 'Porez',
-    effect: 'Igrač uzima karticu i vidi za šta plaća porez',
-    color: 'from-rose-500 to-red-600',
-  },
-  {
-    icon: Shield,
-    name: 'Osiguranje',
-    effect: 'Kada se osvoji ili kupi, osoba je oslobođena plaćanja poreza jedan ceo krug',
-    color: 'from-amber-500 to-orange-600',
   },
 ];
 
@@ -112,7 +100,7 @@ export function Fields() {
             Specijalne Kartice
           </h3>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto gap-6">
             {specialCards.map((card, index) => (
               <motion.div
                 key={index}

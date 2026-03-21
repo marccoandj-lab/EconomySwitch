@@ -19,7 +19,9 @@ export function Footer() {
     e.preventDefault();
     if (href === '#about-us') {
       window.location.hash = href;
-      window.scrollTo(0, 0);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100);
       return;
     }
 
