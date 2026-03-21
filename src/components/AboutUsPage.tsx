@@ -40,7 +40,7 @@ export function AboutUsPage() {
            transition={{ delay: 0.1 }}
            className="mb-24"
         >
-          <div className="aspect-video w-full max-w-4xl mx-auto bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-[0_0_50px_rgba(16,185,129,0.1)] relative">
+          <div className="aspect-video w-full lg:w-3/4 xl:w-2/3 max-w-4xl mx-auto bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-[0_0_50px_rgba(16,185,129,0.1)] relative">
             <video 
               controls 
               className="w-full h-full object-cover rounded-[2rem]"
@@ -63,7 +63,7 @@ export function AboutUsPage() {
              <h2 className="text-3xl font-bold text-slate-100 mb-4 tracking-wide">Naš Tim</h2>
              <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-blue-500 mx-auto rounded-full" />
           </div>
-          <div className="w-full aspect-[16/9] md:aspect-[21/9] bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-2xl transition-all hover:border-blue-500/30">
+          <div className="w-full lg:w-4/5 xl:w-3/4 mx-auto aspect-[16/9] md:aspect-[21/9] bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-2xl transition-all hover:border-blue-500/30">
               <img src="/Tim.jpg" alt="EconomySwitch Timska Slika" className="w-full h-full object-cover" />
           </div>
         </motion.div>
