@@ -52,9 +52,6 @@ export function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-emerald-900/40 text-emerald-400 text-sm font-semibold rounded-full mb-4">
-            O Igri
-          </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Šta je{' '}
             <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
@@ -62,9 +59,7 @@ export function About() {
             </span>
           </h2>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            EconomySwitch je revolucionarna edukativna društvena igra koja na inovativan način
-            uči igrače o finansijskoj pismenosti i održivom razvoju. Kroz interaktivno iskustvo,
-            igrači donose odluke, upravljaju resursima i uče vredne životne lekcije.
+            EconomySwitch je učenička kompanija koja razvija edukativnu društvenu igru i digitalnu aplikaciju namenjenu učenju finansijske pismenosti i cirkularne ekonomije.
           </p>
         </motion.div>
 
