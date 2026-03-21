@@ -43,6 +43,10 @@ export function AboutUsPage() {
           <div className="aspect-video w-full lg:w-3/4 xl:w-2/3 max-w-4xl mx-auto bg-slate-800/80 backdrop-blur-sm rounded-[2rem] border border-slate-700/50 overflow-hidden flex flex-col items-center justify-center shadow-[0_0_50px_rgba(16,185,129,0.1)] relative">
             <video 
               controls 
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full h-full object-cover rounded-[2rem]"
               src="/copy_CF1D07D5-41C3-4D20-A998-56B6177A012E.MP4"
             >
