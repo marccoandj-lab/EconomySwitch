@@ -183,7 +183,7 @@ export function Fields() {
                     <div className="text-2xl">🌱</div>
                   </div>
                   <div className="font-semibold text-white mb-1">Održivost</div>
-                  <div className="text-sm text-slate-400">Zelene tehnologije, ekologija</div>
+                  <div className="text-sm text-slate-400">Održivi razvoj i cirkularna ekonomija</div>
                 </div>
               </div>
             </div>

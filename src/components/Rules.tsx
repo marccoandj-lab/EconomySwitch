@@ -7,7 +7,7 @@ const rules = [
     name: 'Start',
     color: 'from-green-500 to-emerald-600',
     description: 'Početno polje. Svaki igrač počinje ovde sa početnim kapitalom.',
-    example: 'Svaki igrač dobija 100.000  na početku igre.',
+    example: 'Svaki igrač dobija 150.000  na početku igre.',
   },
   {
     icon: Coins,
@@ -153,7 +153,7 @@ export function Rules() {
                 <h3 className="text-2xl lg:text-3xl font-bold">Cilj Igre</h3>
               </div>
               <p className="text-lg text-emerald-100 leading-relaxed mb-6">
-                Prvi igrač koji dostigne <strong className="text-white font-bold">1.000.000</strong> pobeđuje u igri!
+                Prvi igrač koji dostigne <strong className="text-white font-bold">1.000.000 SwitchCoin-a</strong> pobeđuje u igri!
                 Pažljivo upravljajte svojim finansijama, donosite pametne investicione odluke
                 i iskoristite SWITCH mehaniku u svoju korist.
               </p>
@@ -174,7 +174,7 @@ export function Rules() {
             </div>
             <div className="text-center">
               <div className="text-6xl lg:text-7xl font-bold text-white mb-2">
-                1.000.000
+                1.000.000 SC
               </div>
               <div className="text-xl text-emerald-200">Pobednički iznos</div>
             </div>

@@ -203,9 +203,9 @@ export function WebApp() {
                   <p className="text-slate-300 text-sm mb-4">
                     Pristupite direktno preko linka ili skenirajte QR kod svojim telefonom za brz pristup igri.
                   </p>
-                  <a 
-                    href="https://economy-switch-web-app.vercel.app/" 
-                    target="_blank" 
+                  <a
+                    href="https://economy-switch-web-app.vercel.app/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center space-x-2 w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-600 rounded-xl font-bold text-white hover:shadow-lg hover:shadow-emerald-500/40 transition-all hover:-translate-y-1 active:scale-95"
                   >
@@ -241,7 +241,7 @@ export function WebApp() {
               <ul className="space-y-3">
                 {[
                   'Fizičko okupljanje igrača',
-                  'Takttilno iskustvo sa kartama i figicama',
+                  'Taktičko iskustvo sa karticama i figuricama',
                   'Licem u lice interakcija',
                   'Idealno za porodična okupljanja',
                   'Nema potrebe za internetom',

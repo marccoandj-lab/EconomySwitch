@@ -17,7 +17,7 @@ const features = [
   {
     icon: Brain,
     title: 'Razvoj Veština',
-    description: 'Razvijajte kritičko mišljenje, strateško planiranje i donošenje odluka.',
+    description: 'Razvijajte takmičarski duh, strateško planiranje i donošenje odluka.',
     color: 'from-purple-500 to-pink-600',
   },
   {
@@ -101,7 +101,7 @@ export function About() {
               </h3>
               <div className="space-y-4">
                 {[
-                  { title: 'Srednjoskolci (15+)', desc: 'Osnove finansijske pismenosti kroz zabavu' },
+                  { title: 'Srednjoškolci (15+)', desc: 'Osnove finansijske pismenosti i cirkularne ekonomije kroz zabavu' },
                   { title: 'Mladi i studenti', desc: 'Priprema za samostalan život i upravljanje novcem' },
                   { title: 'Porodice', desc: 'Zajedničko učenje i kvalitetno provedeno vreme' },
                   { title: 'Škole i edukatori', desc: 'Interaktivno nastavno sredstvo za radionice' },

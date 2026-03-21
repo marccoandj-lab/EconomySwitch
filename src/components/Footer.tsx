@@ -100,7 +100,7 @@ export function Footer() {
               </li>
               <li>
                 <div className="font-medium text-white mb-1">Lokacija</div>
-                <div>Krusevac, Srbija</div>
+                <div>Kruševac, Srbija</div>
               </li>
             </ul>
           </div>
@@ -119,15 +119,6 @@ export function Footer() {
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-red-500" />
               <span>in Serbia</span>
-            </div>
-
-            <div className="flex items-center space-x-6 text-sm">
-              <a href="#" className="text-slate-500 hover:text-emerald-400 transition-colors">
-                Politika Privatnosti
-              </a>
-              <a href="#" className="text-slate-500 hover:text-emerald-400 transition-colors">
-                Uslovi Korišćenja
-              </a>
             </div>
           </div>
         </div>
