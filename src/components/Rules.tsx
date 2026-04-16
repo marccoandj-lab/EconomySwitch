@@ -6,71 +6,71 @@ const rules = [
     icon: Flag,
     name: 'Start',
     color: 'from-green-500 to-emerald-600',
-    description: 'Početno polje. Svaki igrač počinje ovde sa početnim kapitalom.',
-    example: 'Svaki igrač dobija 150.000  na početku igre.',
+    description: 'Starting field. Each player starts here with initial capital.',
+    example: 'Each player receives 150,000 at the start of the game.',
   },
   {
     icon: Coins,
-    name: 'Prihod',
+    name: 'Income',
     color: 'from-yellow-500 to-amber-600',
-    description: 'Kada stanete na ovo polje, dobijate novac.',
-    example: 'Plata: +50.000  | Bonus: +20.000 ',
+    description: 'When you land on this field, you get money.',
+    example: 'Salary: +50,000 | Bonus: +20,000',
   },
   {
     icon: XCircle,
-    name: 'Trošak',
+    name: 'Expense',
     color: 'from-red-500 to-rose-600',
-    description: 'Neplanirani troškovi – gubite novac.',
-    example: 'Popravka automobila: -15.000  | Računi: -10.000 ',
+    description: 'Unplanned expenses – you lose money.',
+    example: 'Car repair: -15,000 | Bills: -10,000',
   },
   {
     icon: HelpCircle,
-    name: 'Pitanje (Kviz)',
+    name: 'Question (Quiz)',
     color: 'from-purple-500 to-violet-600',
-    description: 'Odgovarate na pitanje sa ponuđenim odgovorima (a, b, c, d).',
-    example: 'Tačan odgovor: +20.000  | Netačan: -10.000 ',
+    description: 'You answer a question with multiple-choice answers (a, b, c, d).',
+    example: 'Correct answer: +20,000 | Incorrect: -10,000',
   },
   {
     icon: List,
-    name: 'Nabrajanje(Samo na fizickoj igri)',
+    name: 'Enumeration (Physical game only)',
     color: 'from-blue-500 to-indigo-600',
-    description: 'Nabrojite što više pojmova iz određene oblasti u roku od 30 sekundi.',
-    example: 'Nabroj 5 banaka: Tačan odgovor = +30.000 ',
+    description: 'List as many terms from a certain field as possible within 30 seconds.',
+    example: 'List 5 banks: Correct answer = +30,000',
   },
   {
     icon: TrendingUp,
-    name: 'Investicija',
+    name: 'Investment',
     color: 'from-emerald-500 to-teal-600',
-    description: 'Ulažete novac. Bacate kockicu za ishod investicije.',
-    example: 'Ulog: 50.000  | Kockica 1-3: Gubitak | 4-6: Dobitak (2x ulog)',
+    description: 'You invest money. Roll the dice for the outcome of the investment.',
+    example: 'Stake: 50,000 | Dice 1-3: Loss | 4-6: Profit (2x stake)',
   },
   {
     icon: Gavel,
-    name: 'Aukcija',
+    name: 'Auction',
     color: 'from-orange-500 to-red-600',
-    description: 'Igrači licitiraju za specijalnu karticu.',
-    example: 'Kartica "Poreski Raj" – oslobađa od poreza jedan krug.',
+    description: 'Players bid for a special card.',
+    example: 'Card "Tax Haven" – exempts from tax for one round.',
   },
   {
     icon: FileText,
-    name: 'Tax (Porez)',
+    name: 'Tax',
     color: 'from-slate-500 to-gray-600',
-    description: 'Plaćate porez ili prikupljate porez od drugih igrača.',
-    example: 'Porez na imovinu: -20.000  | Prikupljeni porez: +40.000 ',
+    description: 'You pay tax or collect tax from other players.',
+    example: 'Property tax: -20,000 | Collected tax: +40,000',
   },
   {
     icon: Repeat,
-    name: 'SWITCH Polje',
+    name: 'SWITCH Field',
     color: 'from-cyan-500 to-blue-600',
-    description: 'Menja temu igre: Finansijska pismenost ⇄ Održivi razvoj.',
-    example: 'Sva naredna polja se tumače u novom kontekstu dok se ne aktivira sledeći SWITCH.',
+    description: 'Changes the game theme: Financial Literacy ⇄ Sustainable Development.',
+    example: 'All subsequent fields are interpreted in the new context until the next SWITCH is activated.',
   },
   {
     icon: Lock,
-    name: 'Zatvor',
+    name: 'Jail',
     color: 'from-slate-600 to-slate-700',
-    description: 'Preskačete 1-3 kruga ili plaćate kauciju.',
-    example: 'Kaucija: -30.000  ili čekajte 2 kruga.',
+    description: 'Skip 1-3 rounds or pay bail.',
+    example: 'Bail: -30,000 or wait 2 rounds.',
   },
 ];
 
@@ -87,17 +87,17 @@ export function Rules() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-blue-900/40 text-blue-400 text-sm font-semibold rounded-full mb-4">
-            Pravila Igre
+            Game Rules
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Kako se{' '}
+            How to{' '}
             <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
-              igra?
+              play?
             </span>
           </h2>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            EconomySwitch ima jednostavna pravila koja se lako uče, ali duboku strategiju
-            koja se razvija tokom igre. Upoznajte se sa svim poljima i mehanikama.
+            EconomySwitch has simple rules that are easy to learn, but deep strategy
+            that develops during the game. Get to know all the fields and mechanics.
           </p>
         </motion.div>
 
@@ -122,7 +122,7 @@ export function Rules() {
                   <h3 className="text-lg font-bold text-white mb-2">{rule.name}</h3>
                   <p className="text-slate-300 text-sm mb-3">{rule.description}</p>
                   <div className="bg-slate-900/50 rounded-lg p-3">
-                    <p className="text-xs text-slate-400 font-medium">Primer:</p>
+                    <p className="text-xs text-slate-400 font-medium">Example:</p>
                     <p className="text-sm text-slate-300">{rule.example}</p>
                   </div>
                 </div>
@@ -150,33 +150,33 @@ export function Rules() {
             <div>
               <div className="flex items-center space-x-4 mb-6">
                 <Trophy className="w-12 h-12 text-yellow-300" />
-                <h3 className="text-2xl lg:text-3xl font-bold">Cilj Igre</h3>
+                <h3 className="text-2xl lg:text-3xl font-bold">Game Goal</h3>
               </div>
               <p className="text-lg text-emerald-100 leading-relaxed mb-6">
-                Prvi igrač koji dostigne <strong className="text-white font-bold">1.000.000 SwitchCoin-a</strong> pobeđuje u igri!
-                Pažljivo upravljajte svojim finansijama, donosite pametne investicione odluke
-                i iskoristite SWITCH mehaniku u svoju korist.
+                The first player to reach <strong className="text-white font-bold">1,000,000 SwitchCoins</strong> wins the game!
+                Manage your finances carefully, make smart investment decisions
+                and use the SWITCH mechanic to your advantage.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-xl">
                   <div className="text-2xl font-bold">🎲</div>
-                  <div className="text-sm text-emerald-100">Bacaj kockicu</div>
+                  <div className="text-sm text-emerald-100">Roll the dice</div>
                 </div>
                 <div className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-xl">
                   <div className="text-2xl font-bold">💰</div>
-                  <div className="text-sm text-emerald-100">Upravljaj novcem</div>
+                  <div className="text-sm text-emerald-100">Manage money</div>
                 </div>
                 <div className="px-6 py-3 bg-white/20 backdrop-blur-sm rounded-xl">
                   <div className="text-2xl font-bold">🔄</div>
-                  <div className="text-sm text-emerald-100">Koristi SWITCH</div>
+                  <div className="text-sm text-emerald-100">Use SWITCH</div>
                 </div>
               </div>
             </div>
             <div className="text-center">
               <div className="text-6xl lg:text-7xl font-bold text-white mb-2">
-                1.000.000 SC
+                1,000,000 SC
               </div>
-              <div className="text-xl text-emerald-200">Pobednički iznos</div>
+              <div className="text-xl text-emerald-200">Winning amount</div>
             </div>
           </div>
         </motion.div>
