@@ -162,7 +162,7 @@ export function Hero() {
               >
                 Learn about{' '}
                 <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-                  finance
+                  finance & circular economy
                 </span>{' '}
                 through{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">
