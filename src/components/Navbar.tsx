@@ -5,12 +5,12 @@ import logo from '../assets/logo.png';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'O igri', href: '#about' },
-  { name: 'Pravila', href: '#rules' },
-  { name: 'Polja & Mehanike', href: '#fields' },
+  { name: 'About the Game', href: '#about' },
+  { name: 'Rules', href: '#rules' },
+  { name: 'Fields & Mechanics', href: '#fields' },
   { name: 'WebApp', href: '#webapp' },
-  { name: 'O Nama', href: '#about-us' },
-  { name: 'Kontakt', href: '#contact' },
+  { name: 'About Us', href: '#about-us' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 export function Navbar() {
