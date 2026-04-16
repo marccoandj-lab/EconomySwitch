@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Monitor, Smartphone, Users, Globe, Zap, Shield } from 'lucide-react';
-import qrCodeImage from '../assets/adobe-express-qr-code.png';
+import qrCodeImage from '../assets/qr-code.png';
 
 const features = [
   {
