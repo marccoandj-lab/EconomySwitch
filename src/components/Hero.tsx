@@ -13,73 +13,73 @@ import char9 from '../assets/9.png';
 
 const heroSteps = [
   {
-    title: 'Dobrodošli u EconomySwitch',
-    subtitle: 'Igra koja menja način razmišljanja',
-    description: 'EconomySwitch je inovativna, edukativna društvena igra koja kombinuje zabavu sa učenjem. Kroz dinamično iskustvo, igrači razvijaju finansijsku pismenost i svest o održivom razvoju.',
+    title: 'Welcome to EconomySwitch',
+    subtitle: 'The game that changes the way you think',
+    description: 'EconomySwitch is an innovative, educational board game that combines fun with learning. Through a dynamic experience, players develop financial literacy and awareness of sustainable development.',
     character: char9,
     characterName: 'Switch',
     color: 'from-cyan-500 to-blue-600',
   },
   {
-    title: 'Upravljanje Novcem',
-    subtitle: 'Osnove finansijske pismenosti',
-    description: 'Naučite kako da balansirate prihode i troškove, pravite budžet i razumete vrednost novca. Svaka odluka ima posledice – baš kao u stvarnom životu!',
+    title: 'Money Management',
+    subtitle: 'Financial literacy basics',
+    description: 'Learn how to balance income and expenses, create a budget, and understand the value of money. Every decision has consequences – just like in real life!',
     character: char1,
     characterName: 'Novak Switchovic',
     color: 'from-emerald-500 to-teal-600',
   },
   {
-    title: 'Investicije i Rizik',
-    subtitle: 'Pametno ulaganje',
-    description: 'Upoznajte se sa svetom investicija! Uložite novac, zatim bacite kockicu i vidite da li će vaša investicija doneti profit.',
+    title: 'Investment and Risk',
+    subtitle: 'Smart investing',
+    description: 'Enter the world of investments! Invest your money, then roll the dice to see if your investment brings a profit.',
     character: char2,
     characterName: 'Leonardo Da Switchy',
     color: 'from-amber-500 to-orange-600',
   },
   {
-    title: 'Kvizovi i Znanje',
-    subtitle: 'Proverite svoje znanje',
-    description: 'Na poljima sa pitanjima odgovarate na pitanja iz finansijske pismenosti, održivog razvoja i cirkularne ekonomije. Tačni odgovori donose bonus novac, a netačni – male kazne.',
+    title: 'Quizzes and Knowledge',
+    subtitle: 'Test your knowledge',
+    description: 'On question fields, answer questions about financial literacy, sustainable development, and circular economy. Correct answers bring bonus money, while incorrect ones bring minor penalties.',
     character: char3,
     characterName: 'Switchola Jokić',
     color: 'from-pink-500 to-rose-600',
   },
   {
-    title: 'Održivi Razvoj',
-    subtitle: 'Zelena ekonomija budućnosti',
-    description: 'EconomySwitch vas uči kako da donosite odluke koje su dobre i za vaš novčanik i za planetu.',
+    title: 'Sustainable Development',
+    subtitle: 'Green economy of the future',
+    description: 'EconomySwitch teaches you how to make decisions that are good for both your wallet and the planet.',
     character: char4,
     characterName: 'Switchopatra',
     color: 'from-red-500 to-rose-600',
   },
   {
-    title: 'Inovacija',
-    subtitle: 'Tehnologija menja svet',
-    description: 'SWITCH mehanika, zbog koje ćete morati da promenite način razmišljanja.',
+    title: 'Innovation',
+    subtitle: 'Technology changes the world',
+    description: 'The SWITCH mechanic will force you to change your way of thinking.',
     character: char5,
     characterName: 'Wolfgang Switchodeus Mozart',
     color: 'from-blue-500 to-indigo-600',
   },
   {
-    title: 'Nova Polja',
-    subtitle: 'Preduzetništvo i liderstvo',
-    description: 'Naša igra sadrži nova polja poput polja za nabrajanje, investicije, aukcije, osiguranje, takse',
+    title: 'New Fields',
+    subtitle: 'Entrepreneurship and leadership',
+    description: 'Our game features new fields such as listing, investment, auction, insurance, and taxes.',
     character: char6,
     characterName: 'Switchbert Einstein',
     color: 'from-green-500 to-emerald-600',
   },
   {
-    title: 'Kreativnost',
-    subtitle: 'Umetnost kao investicija',
-    description: 'Figurice predstavljaju našu maskotu Switcha kao različite poznate ličnosti',
+    title: 'Creativity',
+    subtitle: 'Art as an investment',
+    description: 'The game pieces represent our mascot Switch as various famous personalities.',
     character: char7,
     characterName: 'Switchola Tesla',
     color: 'from-blue-600 to-cyan-600',
   },
   {
-    title: 'Cilj: 1.000.000',
-    subtitle: 'Postanite milioner!',
-    description: 'Prvi igrač koji dostigne milion evra pobeđuje! Koristite sve strategije, iskoristite SWITCH mehaniku i donosite pametne odluke na putu do uspeha.',
+    title: 'Goal: 1,000,000',
+    subtitle: 'Become a millionaire!',
+    description: 'The first player to reach one million euros wins! Use all strategies, leverage the SWITCH mechanic, and make smart decisions on your way to success.',
     character: char8,
     characterName: 'Frida Switchlo',
     color: 'from-purple-500 to-pink-600',
@@ -160,13 +160,13 @@ export function Hero() {
                 transition={{ delay: 0.3 }}
                 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight"
               >
-                Uči o{' '}
+                Learn about{' '}
                 <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-                  finansijama
+                  finance
                 </span>{' '}
-                kroz{' '}
+                through{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">
-                  igru
+                  play
                 </span>
               </motion.h1>
 
@@ -176,9 +176,9 @@ export function Hero() {
                 transition={{ delay: 0.4 }}
                 className="text-sm sm:text-lg text-slate-300 leading-relaxed max-w-xl hidden sm:block"
               >
-                EconomySwitch je inovativna društvena igra koja kombinuje zabavu sa edukacijom.
-                Razvijte finansijsku inteligenciju, naučite o održivom razvoju i donosite pametne
-                odluke – sve kroz uzbudljivo iskustvo igranja!
+                EconomySwitch is an innovative board game that combines fun with education.
+                Develop financial intelligence, learn about sustainable development, and make
+                smart decisions – all through an exciting gaming experience!
               </motion.p>
 
               <motion.div
@@ -196,7 +196,7 @@ export function Hero() {
                   ↓
                 </motion.span>
                 <span className="text-lg bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent italic">
-                  Skrolaj da saznaš više
+                  Scroll to learn more
                 </span>
               </motion.div>
 
@@ -208,9 +208,9 @@ export function Hero() {
                 className="grid grid-cols-3 gap-6 pt-4 lg:pt-8"
               >
                 {[
-                  { value: '2-8', label: 'Igrača' },
-                  { value: '60+', label: 'Minuta' },
-                  { value: '15+', label: 'Godina' },
+                  { value: '2-8', label: 'Players' },
+                  { value: '60+', label: 'Minutes' },
+                  { value: '15+', label: 'Years' },
                 ].map((stat, index) => (
                   <div key={index} className="text-center">
                     <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
@@ -275,7 +275,7 @@ export function Hero() {
                 style={{ opacity }}
                 className="absolute -bottom-8 lg:-bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-1 lg:space-y-2"
               >
-                <span className="text-xs lg:text-sm text-slate-500">Skroluj za više</span>
+                <span className="text-xs lg:text-sm text-slate-500">Scroll for more</span>
                 <motion.div
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
