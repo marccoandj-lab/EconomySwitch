@@ -6,14 +6,14 @@ import zelenaStrana from '../assets/ZelenaStrana.png';
 const specialCards = [
   {
     icon: HelpCircle,
-    name: 'Pitanja',
-    effect: 'Kartice sa pitanjima a odgovori pod A, B, C i D',
+    name: 'Questions',
+    effect: 'Question cards with answers under A, B, C and D',
     color: 'from-blue-500 to-indigo-600',
   },
   {
     icon: List,
-    name: 'Nabrajanje',
-    effect: 'Igrač nabraja pojmove iz određenih oblasti',
+    name: 'Enumeration',
+    effect: 'Player lists terms from certain fields',
     color: 'from-emerald-500 to-teal-600',
   },
 ];
@@ -30,17 +30,17 @@ export function Fields() {
           className="text-center z-20 px-4 mt-16 mb-12 sm:mb-20 w-full"
         >
           <span className="inline-block px-4 py-2 bg-purple-900/30 text-purple-300 text-sm font-semibold rounded-full mb-4">
-            Polja & Mehanike
+            Fields & Mechanics
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Dubina{' '}
+            Depth of the{' '}
             <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
-              igre
+              game
             </span>
           </h2>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            EconomySwitch nije samo igra na sreću – strategija, planiranje i pametne odluke
-            su ključni za pobedu. Upoznajte se sa svim mehanikama.
+            EconomySwitch is not just a game of chance – strategy, planning and smart decisions 
+            are key to victory. Get to know all the mechanics.
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ export function Fields() {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-2xl lg:text-3xl font-bold text-white text-center mb-12">
-            Specijalne Kartice
+            Special Cards
           </h3>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto gap-6">
@@ -147,15 +147,15 @@ export function Fields() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">SWITCH Mehanika</h3>
-                  <p className="text-slate-400 font-medium">Najunikatniji deo igre</p>
+                  <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">SWITCH Mechanic</h3>
+                  <p className="text-slate-400 font-medium">The most unique part of the game</p>
                 </div>
               </div>
 
               <p className="text-lg text-slate-300 leading-relaxed mb-8">
-                Kada igrač stane na SWITCH polje, cela igra menja kontekst!
-                Iz finansijske pismenosti prelazite u svet održivog razvoja i obrnuto.
-                Ova mehanika uči igrače da razmišljaju iz više perspektiva.
+                When a player lands on a SWITCH field, the whole game changes context! 
+                From financial literacy you pass into the world of sustainable development and vice versa. 
+                This mechanic teaches players to think from multiple perspectives.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
@@ -163,15 +163,15 @@ export function Fields() {
                   <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center mb-3">
                     <div className="text-2xl">💰</div>
                   </div>
-                  <div className="font-semibold text-white mb-1">Finansije</div>
-                  <div className="text-sm text-slate-400">Prihodi, troškovi, investicije</div>
+                  <div className="font-semibold text-white mb-1">Finance</div>
+                  <div className="text-sm text-slate-400">Income, expenses, investments</div>
                 </div>
                 <div className="bg-slate-900/50 backdrop-blur-md border border-white/5 rounded-2xl p-5 hover:bg-slate-800/50 transition-colors flex flex-col items-center lg:items-start">
                   <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-3">
                     <div className="text-2xl">🌱</div>
                   </div>
-                  <div className="font-semibold text-white mb-1">Održivost</div>
-                  <div className="text-sm text-slate-400">Održivi razvoj i cirkularna ekonomija</div>
+                  <div className="font-semibold text-white mb-1">Sustainability</div>
+                  <div className="text-sm text-slate-400">Sustainable development and circular economy</div>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@ export function Fields() {
                         <div className="w-20 h-20 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-slate-700 transition-all shadow-lg mx-auto">
                           <span className="text-4xl filter drop-shadow-md">💰</span>
                         </div>
-                        <div className="text-sm font-semibold text-slate-300">Finansije</div>
+                        <div className="text-sm font-semibold text-slate-300">Finance</div>
                       </div>
 
                       <motion.div
@@ -207,14 +207,14 @@ export function Fields() {
                         <div className="w-20 h-20 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-slate-700 transition-all shadow-lg mx-auto">
                           <span className="text-4xl filter drop-shadow-md">🌱</span>
                         </div>
-                        <div className="text-sm font-semibold text-slate-300">Održivost</div>
+                        <div className="text-sm font-semibold text-slate-300">Sustainability</div>
                       </div>
                     </div>
 
                     <div className="pt-6 border-t border-slate-700/50">
                       <p className="text-sm text-slate-400 italic">
-                        "SWITCH mehanika čini EconomySwitch jedinstvenom igrom koja
-                        povezuje dva naizgled različita sveta u koherentnu celinu."
+                        "The SWITCH mechanic makes EconomySwitch a unique game that connects 
+                        two seemingly different worlds into a coherent whole."
                       </p>
                     </div>
                   </div>

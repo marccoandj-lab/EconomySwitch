@@ -6,22 +6,22 @@ const features = [
   {
     icon: Globe,
     title: 'Online Multiplayer',
-    description: 'Igrajte sa prijateljima iz bilo kog dela sveta. Podrška za 2-6 igrača u realnom vremenu.',
+    description: 'Play with friends from any part of the world. Support for 2-6 players in real time.',
   },
   {
     icon: Zap,
-    title: 'Brze Partije',
-    description: 'Digitalna verzija omogućava brže partije sa automatskim proračunima i animacijama.',
+    title: 'Fast Games',
+    description: 'The digital version enables faster games with automatic calculations and animations.',
   },
   {
     icon: Shield,
-    title: 'Bezbednost',
-    description: 'Svi podaci su enkriptovani. Privatnost igrača je naš prioritet.',
+    title: 'Security',
+    description: 'All data is encrypted. Player privacy is our priority.',
   },
   {
     icon: Users,
-    title: 'Edukativni Mod',
-    description: 'Poseban režim za škole i edukatore sa naprednom statistikom i izveštajima.',
+    title: 'Educational Mode',
+    description: 'A special mode for schools and educators with advanced statistics and reports.',
   },
 ];
 
@@ -38,7 +38,7 @@ export function WebApp() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-emerald-500/20 text-emerald-400 text-sm font-semibold rounded-full mb-4 border border-emerald-500/30">
-            Digitalna Verzija
+            Digital Version
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             EconomySwitch{' '}
@@ -47,8 +47,7 @@ export function WebApp() {
             </span>
           </h2>
           <p className="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Doživite EconomySwitch na potpuno novi način! Naša digitalna platforma
-            donosi sve prednosti društvene igre uz moderne funkcionalnosti online igranja.
+            Experience EconomySwitch in a completely new way! Our digital platform brings all the benefits of a board game along with modern online gaming functionalities.
           </p>
         </motion.div>
 
@@ -102,9 +101,9 @@ export function WebApp() {
                 {/* Player Info */}
                 <div className="mt-6 grid grid-cols-3 gap-4">
                   {[
-                    { name: 'Igrač 1', money: '450.000', color: 'from-emerald-500 to-teal-600' },
-                    { name: 'Igrač 2', money: '320.000', color: 'from-blue-500 to-indigo-600' },
-                    { name: 'Igrač 3', money: '280.000', color: 'from-purple-500 to-pink-600' },
+                    { name: 'Player 1', money: '450.000', color: 'from-emerald-500 to-teal-600' },
+                    { name: 'Player 2', money: '320.000', color: 'from-blue-500 to-indigo-600' },
+                    { name: 'Player 3', money: '280.000', color: 'from-purple-500 to-pink-600' },
                   ].map((player, index) => (
                     <div
                       key={index}
@@ -120,17 +119,17 @@ export function WebApp() {
 
                 {/* Current Turn */}
                 <div className="mt-4 bg-emerald-500/20 border border-emerald-500/30 rounded-xl p-3 text-center">
-                  <div className="text-sm text-emerald-400">Trenutni potez: Igrač 1</div>
+                  <div className="text-sm text-emerald-400">Current turn: Player 1</div>
                 </div>
               </div>
 
               {/* Controls */}
               <div className="mt-6 flex justify-center space-x-4">
                 <button className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-600 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/30 transition-all">
-                  🎲 Baci Kockicu
+                  🎲 Roll the Dice
                 </button>
                 <button className="px-6 py-3 bg-slate-700 rounded-xl font-semibold hover:bg-slate-600 transition-all">
-                  ⚙️ Podešavanja
+                  ⚙️ Settings
                 </button>
               </div>
             </div>
@@ -146,11 +145,10 @@ export function WebApp() {
           >
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold mb-6">
-                Zašto izabrati WebApp?
+                Why choose the WebApp?
               </h3>
               <p className="text-slate-400 leading-relaxed mb-8">
-                Digitalna verzija EconomySwitch-a zadržava sve prednosti originalne igre
-                uz dodatne funkcionalnosti koje samo online platforma može da ponudi.
+                The digital version of EconomySwitch retains all the benefits of the original game with additional functionalities that only an online platform can offer.
               </p>
             </div>
 
@@ -177,7 +175,7 @@ export function WebApp() {
 
             {/* Platform Availability */}
             <div className="pt-8 border-t border-slate-700">
-              <h4 className="text-lg font-semibold mb-4">Dostupno na svim platformama</h4>
+              <h4 className="text-lg font-semibold mb-4">Available on all platforms</h4>
               <div className="flex flex-wrap gap-4">
                 {[
                   { icon: Monitor, name: 'Desktop' },
@@ -199,9 +197,9 @@ export function WebApp() {
             <div className="pt-8 mt-8 border-t border-slate-700">
               <div className="bg-gradient-to-br from-emerald-500/20 to-blue-500/20 border border-emerald-500/30 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-6 justify-between shadow-lg shadow-emerald-500/10">
                 <div className="text-center sm:text-left">
-                  <h4 className="text-xl font-bold mb-2 text-white">Isprobajte WebApp odmah!</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white">Try the WebApp now!</h4>
                   <p className="text-slate-300 text-sm mb-4">
-                    Pristupite direktno preko linka ili skenirajte QR kod svojim telefonom za brz pristup igri.
+                    Access directly via the link or scan the QR code with your phone for quick access to the game.
                   </p>
                   <a
                     href="https://economy-switch-web-app.vercel.app/"
@@ -209,7 +207,7 @@ export function WebApp() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center space-x-2 w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-emerald-500 to-blue-600 rounded-xl font-bold text-white hover:shadow-lg hover:shadow-emerald-500/40 transition-all hover:-translate-y-1 active:scale-95"
                   >
-                    <span>Pokreni Igru</span>
+                    <span>Start Game</span>
                     <Globe className="w-5 h-5" />
                   </a>
                 </div>
@@ -230,21 +228,21 @@ export function WebApp() {
           className="bg-slate-800/50 backdrop-blur-sm rounded-3xl border border-slate-700 p-8 lg:p-12"
         >
           <h3 className="text-2xl font-bold text-center mb-12">
-            Društvena Igra vs. WebApp
+            Board Game vs. WebApp
           </h3>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Board Game */}
             <div className="bg-gradient-to-br from-emerald-500/10 to-teal-500/10 rounded-2xl p-6 border border-emerald-500/20">
               <div className="text-4xl mb-4">🎲</div>
-              <h4 className="text-xl font-bold mb-4">Društvena Igra</h4>
+              <h4 className="text-xl font-bold mb-4">Board Game</h4>
               <ul className="space-y-3">
                 {[
-                  'Fizičko okupljanje igrača',
-                  'Taktičko iskustvo sa karticama i figuricama',
-                  'Licem u lice interakcija',
-                  'Idealno za porodična okupljanja',
-                  'Nema potrebe za internetom',
+                  'Physical gathering of players',
+                  'Tactical experience with cards and figures',
+                  'Face-to-face interaction',
+                  'Ideal for family gatherings',
+                  'No need for internet',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3 text-slate-300">
                     <div className="w-2 h-2 bg-emerald-400 rounded-full" />
@@ -260,11 +258,11 @@ export function WebApp() {
               <h4 className="text-xl font-bold mb-4">WebApp</h4>
               <ul className="space-y-3">
                 {[
-                  'Igrajte sa bilo kog mesta',
-                  'Automatski proračuni i animacije',
+                  'Play from anywhere',
+                  'Automatic calculations and animations',
                   'Online multiplayer',
-                  'Statistika i napredak',
-                  'Brže partije',
+                  'Statistics and progress',
+                  'Faster games',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3 text-slate-300">
                     <div className="w-2 h-2 bg-blue-400 rounded-full" />
