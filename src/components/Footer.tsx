@@ -79,8 +79,7 @@ export function Footer() {
             </div>
 
             <p className="text-slate-400 leading-relaxed mb-6 max-w-md">
-              EconomySwitch je inovativna edukativna igra koja uči finansijskoj pismenosti
-              i održivom razvoju kroz zabavno i interaktivno iskustvo.
+              EconomySwitch is an innovative educational game that teaches financial literacy and sustainable development through a fun and interactive experience.
             </p>
 
             <div className="flex items-center space-x-4 mb-6">
@@ -110,15 +109,15 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Brzi Linkovi</h4>
+            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {[
                 { name: 'Home', href: '#home' },
-                { name: 'O igri', href: '#about' },
-                { name: 'Pravila', href: '#rules' },
-                { name: 'Polja & Mehanike', href: '#fields' },
+                { name: 'About the Game', href: '#about' },
+                { name: 'Rules', href: '#rules' },
+                { name: 'Fields & Mechanics', href: '#fields' },
                 { name: 'WebApp', href: '#webapp' },
-                { name: 'O nama', href: '#about-us' },
+                { name: 'About Us', href: '#about-us' },
               ].map((link, index) => (
                 <li key={index}>
                   <a
@@ -135,7 +134,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Kontakt</h4>
+            <h4 className="text-lg font-semibold mb-6">Contact</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li>
                 <div className="font-medium text-white mb-1">Email</div>
@@ -144,8 +143,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <div className="font-medium text-white mb-1">Lokacija</div>
-                <div>Kruševac, Srbija</div>
+                <div className="font-medium text-white mb-1">Location</div>
+                <div>Kruševac, Serbia</div>
               </li>
             </ul>
           </div>
@@ -157,7 +156,7 @@ export function Footer() {
         <div className="pt-8 border-t border-slate-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} EconomySwitch. Sva prava zadržana.
+              © {new Date().getFullYear()} EconomySwitch. All rights reserved.
             </div>
 
             <div className="flex items-center space-x-2 text-slate-500 text-sm">
